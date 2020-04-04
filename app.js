@@ -206,44 +206,44 @@ function nameGen(keyword) {
     var loremRow = loremTable.insertRow(1);
     var loremCell = loremRow.insertCell(0);
     const lorem = faker.lorem.word() + keyword;
-    loremCell.innerHTML = `<a href="https://tiktok.com/@${lorem}" target="_blank">${lorem}</a>`;
+    loremCell.innerHTML = `<a href="https://www.youtube.com/results?search_query=${lorem}&sp=EgIQAg%253D%253D" target="_blank">${lorem}</a>`;
 
     // add random first name keywords
     var fakerFirstNameRow = fakerTableFirstName.insertRow(1);
     var fakerFirstNameCell = fakerFirstNameRow.insertCell(0);
     const fakerFirstNameC = faker.name.firstName() + keyword;
-    fakerFirstNameCell.innerHTML = `<a href="https://tiktok.com/@${fakerFirstNameC}" target="_blank">${fakerFirstNameC}</a>`;
+    fakerFirstNameCell.innerHTML = `<a href="https://www.youtube.com/results?search_query=${fakerFirstNameC}&sp=EgIQAg%253D%253D" target="_blank">${fakerFirstNameC}</a>`;
 
     // add random last name keywords
     var fakerLastNameRow = fakerTableLastName.insertRow(1);
     var fakerLastNameCell = fakerLastNameRow.insertCell(0);
     const fakerLastNameC = keyword + faker.name.lastName();
-    fakerLastNameCell.innerHTML = `<a href="https://tiktok.com/@${fakerLastNameC}" target="_blank">${fakerLastNameC}</a>`;
+    fakerLastNameCell.innerHTML = `<a href="https://www.youtube.com/results?search_query=${fakerLastNameC}&sp=EgIQAg%253D%253D" target="_blank">${fakerLastNameC}</a>`;
 
     // add random alpha num keywords
     var alphaNumTableRow = alphaNumTable.insertRow(1);
     var alphaNumTableCell = alphaNumTableRow.insertCell(0);
     const alphaNumC = keyword + faker.random.alphaNumeric();
-    alphaNumTableCell.innerHTML = `<a href="https://tiktok.com/@${alphaNumC}" target="_blank">${alphaNumC}</a>`;
+    alphaNumTableCell.innerHTML = `<a href="https://www.youtube.com/results?search_query=${alphaNumC}&sp=EgIQAg%253D%253D/@" target="_blank">${alphaNumC}</a>`;
 
     // add random num keywords
     var numTableRow = numTable.insertRow(1);
     var numTableCell = numTableRow.insertCell(0);
     const numTableC = keyword + faker.random.number();
-    numTableCell.innerHTML = `<a href="https://tiktok.com/@${numTableC}" target="_blank">${numTableC}</a>`;
+    numTableCell.innerHTML = `<a href="https://www.youtube.com/results?search_query=${numTableC}&sp=EgIQAg%253D%253D" target="_blank">${numTableC}</a>`;
 
     // add prefix to keywords
     var prefixTableRow = prefixTable.insertRow(1);
     var prefixTableCell = prefixTableRow.insertCell(0);
     const prefixTableC =
       faker.name.prefix() + "." + keyword + faker.random.word();
-    prefixTableCell.innerHTML = `<a href="https://tiktok.com/@${prefixTableC}" target="_blank">${prefixTableC}</a>`;
+    prefixTableCell.innerHTML = `<a href="https://www.youtube.com/results?search_query=${prefixTableC}&sp=EgIQAg%253D%253D" target="_blank">${prefixTableC}</a>`;
 
     // add suffix to keywords
     var suffixTableRow = suffixTable.insertRow(1);
     var suffixTableCell = suffixTableRow.insertCell(0);
     suffixTableC = keyword + faker.name.suffix();
-    suffixTableCell.innerHTML = `<a href="https://tiktok.com/@${suffixTableC}" target="_blank">${suffixTableC}</a>`;
+    suffixTableCell.innerHTML = `<a href="https://www.youtube.com/results?search_query=${suffixTableC}&sp=EgIQAg%253D%253D" target="_blank">${suffixTableC}</a>`;
   }
 }
 
