@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Kulim Park", sans-serif;
+}
+h1 {
+  font-size: 40px;
+}
+.about-p {
+  width: 355px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  padding-bottom: 0px;
+  color: red;
+  min-width: 100%;
+  position: relative;
+  background: transparent;
+  font-size: 18px;
+  margin-top: 5px;
+}
+label {
+  font-size: 18px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: #ffffff;
+  position: relative;
+}
+
+.input-set {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  border-bottom: 1px solid #c1c1c1;
+  min-height: 6vh;
+  min-width: 9vw;
+  padding: 5px;
+  margin-top: 9px;
+}
+
+.red {
+  color: red;
+}
+
+.red-input {
+  border-bottom: 1px solid red;
+}
+
+.green-input {
+  border-bottom: 1px solid green;
+}
+
+.blue-input {
+  border-bottom: 1px solid blue;
+}
+
+.input-set label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  color: #696464;
+  transition: all 0.5 ease;
+}
+
+.input-set label.label-top {
+  top: 0px;
+  color: #696464;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+}
+
+.content {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form {
+  width: 79vw;
+  min-height: 29vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.generate-button {
+  background-color: red;
+  padding: 9px;
+  min-height: 50px;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 20px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.generate-button:hover {
+  background-color: #fff;
+  color: red;
+  border: 1px solid red;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.input-set {
+  width: 100%;
+}
+.msg {
+  margin-top: 4px;
+  font-size: 18px;
+}
+
+.logo {
+  font-size: 37px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.logo-p1 {
+  /* color: red; */
+  color: #000;
+}
+
+.logo-p2 {
+  /* color: #0045ff; */
+  color: red;
+}
+.names {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.show-grid {
+  display: grid;
+}
+
+.verify-name-message {
+  display: none;
+  color: green;
+  text-align: center;
+}
+
+.verify-name-message span {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+table {
+  width: 150px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+table tr {
+  display: flex;
+  /*   border:1px solid #736464; */
+  border-bottom: 1px solid;
+  padding: 5px;
+  color: #ff5722;
+}
+table th {
+  margin: 0 auto;
+}
+
+td {
+}
+
+table tr td {
+  margin-top: 5px;
+  width: 100%;
+}
+table a {
+  color: #009688;
+  text-decoration: none;
+}
+
+/* table a:before
+{
+  content: "·";
+  font-size:14px;
+  
+} */
+
+/* .prefix-table
+{
+  font-size:12px;
+  font-weight:bold;
+} */
+
+.loading {
+  width: 100vw;
+  pointer-events: none;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.load {
+  display: flex;
+}
+.dot1,
+.dot2,
+.dot3 {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border: 1px solid #bbb1b1;
+  border-radius: 50%;
+  animation: 2s alternate infinite dot-animation;
+}
+
+.dot1 {
+  background-color: #000000;
+}
+.dot2 {
+  background-color: white;
+}
+.dot3 {
+  background-color: #e83f3f;
+  /*   animation:2s alternate infinite  dot3-animation; */
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  background-color: red;
+  padding: 5px;
+  margin-top: 25px;
+}
+
+.footer-set {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-head {
+  text-decoration: underline;
+  color: white;
+}
+
+footer a,
+span {
+  text-decoration: none;
+  color: #5affa2;
+}
+
+@keyframes dot-animation {
+  from {
+    margin: 0 0;
+  }
+
+  50% {
+    margin: 0 -40px;
+  }
+
+  to {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  form {
+    width: 55vw;
+  }
+  .names {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
