@@ -142,7 +142,8 @@ form {
   justify-content: center;
 }
 
-.generate-button {
+.generate-button,
+.formButton {
   background-color: red;
   padding: 9px;
   min-height: 50px;
@@ -153,7 +154,8 @@ form {
   border-radius: 4px;
 }
 
-.generate-button:hover {
+.generate-button,
+.formButton:hover {
   background-color: #fff;
   color: red;
   border: 1px solid red;
